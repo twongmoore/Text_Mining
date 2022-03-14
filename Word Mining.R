@@ -64,7 +64,7 @@ book_words <- all_text %>%
   group_by(title) %>% 
   count(title, word, sort = TRUE)
 
-#Groip by title
+#Group by title
 total_words <- book_words %>% 
   group_by(title) %>% 
   summarise(total = sum(n))
